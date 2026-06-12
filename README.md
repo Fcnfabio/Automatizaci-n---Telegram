@@ -4,7 +4,7 @@
 
 ---
 
-## 📌 Descripción general
+## 📌 Descripción general (EXAMEN)
 
 **AMB Reporta** es un sistema de gestión de reportes ciudadanos compuesto por dos partes:
 
@@ -13,7 +13,7 @@
 | **Frontend** | HTML + CSS + JavaScript (Leaflet / OpenStreetMap) | Formulario de reporte, mapa interactivo y seguimiento |
 | **Backend / Automatización** | n8n (`Workflow.json`) | Recepción, clasificación con IA, almacenamiento en Google Sheets, notificaciones Telegram |
 
-El ciudadano entra al portal, llena un formulario con su nombre, tipo de daño, foto y ubicación en el mapa. El sistema lo procesa automáticamente: una IA analiza la imagen, el reporte queda guardado en una hoja de Google Sheets y el equipo recibe una notificación por Telegram.
+El ciudadano entra al portal, llena un formulario con su nombre, tipo de daño, foto y ubicación en el mapa. El sistema lo procesa automáticamente: una IA analiza la imagen, el reporte queda guardado en una hoja de Google Sheets y el equipo recibe una notificación por Telegram. La nueva validación para el examen del proyecto fue añadir un nodo IF para verificar que el correo tenga un @ y que el ID del ciudadano no esté vacío, también valida el ingreso de formatos tipo imagen y en el campo de Edit Fields valida la normalización de texto, si alguno de estos campos no se cumple se realiza la validación del error en los datos en el apartado de telegram. Corre al usar https://fcnfabio.github.io/Automatizaci-n---Telegram/index.html
 
 ---
 
